@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -187,7 +187,8 @@
                     <div class="d-flex justify-content-between">
                         <h2>Reviews</h2>
                         <!-- clear button to clear search field  -->
-                        <button type="button" class="btn btn-primary">Add Review</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#reviewModal">Add Review</button>
                     </div>
                     <!-- Reviews listing  -->
                     <div class="container my-3">
@@ -261,8 +262,8 @@
                                 the narrative.
                             </p>
                         </div>
-                           <!-- review  container  -->
-                           <div class="card shadow-lg p-3 mt-3">
+                        <!-- review  container  -->
+                        <div class="card shadow-lg p-3 mt-3">
                             <!-- user name  & review date-->
                             <div class="d-flex justify-content-between my-2">
                                 <h3 class="h5">Yogesh Jangir</h3>
@@ -301,31 +302,70 @@
             </div>
         </div>
     </main>
-        <!-- footer section  -->
-        <footer class="bg-primary shadow-lg mt-2">
-            <div class="container p-5 text-white">
-                <div class="row">
-                    <div class="col-4">
-                        <h4>Book Review Application</h4>
-                        <p>Book review application developed for providing users book reviews given by users</p>
-                        <p>Copyright &copy; 2024-25</p>
-                    </div>
-                    <div class="col-4">
-                        <h4>About Us</h4>
-                        <p>We are group of indiviudal who build this application for community</p>
-                        <p>We are reader who enjoy the books reading and love the books</p>
-                    </div>
-                    <div class="col-4">
-                        <h4>Links</h4>
-                        <ul>
-                            <li><a href="#" class="text-white">Contact Us</a></li>
-                            <li><a href="#" class="text-white">My Profile</a></li>
-                            <li><a href="#" class="text-white">Best Books</a></li>
-                        </ul>
-                    </div>
+    <!-- footer section  -->
+    <footer class="bg-primary shadow-lg mt-2">
+        <div class="container p-5 text-white">
+            <div class="row">
+                <div class="col-4">
+                    <h4>Book Review Application</h4>
+                    <p>Book review application developed for providing users book reviews given by users</p>
+                    <p>Copyright &copy; 2024-25</p>
+                </div>
+                <div class="col-4">
+                    <h4>About Us</h4>
+                    <p>We are group of indiviudal who build this application for community</p>
+                    <p>We are reader who enjoy the books reading and love the books</p>
+                </div>
+                <div class="col-4">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">My Profile</a></li>
+                        <li><a href="#" class="text-white">Best Books</a></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
+
+    <!-- Review Modal -->
+    <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="reviewModalLabel">Add Review for <b>A.P.J abdul kalam My
+                            Journey</b></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="#" method="get">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="review" class="form-label">Write Review</label>
+                   <textarea name="review" id="" class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="rating" class="form-label">rating</label>
+                        <select name="rating" id="" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- bootstarp js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
