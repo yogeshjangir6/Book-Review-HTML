@@ -1,24 +1,29 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Book Review Application</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Book Review Header section -->
     <header class="container-fluid bg-primary shadow-lg">
         <div class="container">
-           <div class="d-flex justify-content-between ">
-            <h1><a href="#" class="text-white text-decoration-none">Book Review App</a></h1>
-            <div class="d-flex align-items-center justify-content-center">
-                <button type="button" class="btn btn-primary mx-2">Login</button>
-                <button type="button" class="btn btn-primary">Register</button>
+            <div class="d-flex justify-content-between ">
+                <h1><a href="#" class="text-white text-decoration-none">Book Review Application</a></h1>
+                <div class="d-flex align-items-center justify-content-center">
+                    <button type="button" class="btn btn-primary mx-2">Login</button>
+                    <button type="button" class="btn btn-primary">Register</button>
+                </div>
             </div>
-           </div>
         </div>
     </header>
     <main>
@@ -29,19 +34,21 @@
                 <button type="button" class="btn btn-secondary">Clear</button>
             </div>
             <!-- books search -->
-           <div class="card my-3 shadow-lg">
-            <div class="card-body">
-               <div class="row">
-                <div class="col-lg-11 col-md-11">
-                    <input type="search" name="search" id="" class="form-control form-control-lg" placeholder="Search By Title">
+            <div class="card my-3 shadow-lg">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-11 col-md-11">
+                            <input type="search" name="search" id="" class="form-control form-control-lg"
+                                placeholder="Search By Title">
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary btn-lg w-100"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col">
-                    <button type="button" class="btn btn-primary btn-lg w-100"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-               </div>
             </div>
-           </div>
-           <!-- book listing -->
+            <!-- book listing -->
             <section>
                 <!-- book listing row, with 4 books columns -->
                 <div class="row mt-3">
@@ -49,26 +56,27 @@
                         <div class="card">
                             <a href="#"><img src="images/apj_abdul_kalam.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
-                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">Abdul Kalam My Journey</a></h2>
+                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">Abdul Kalam My
+                                        Journey</a></h2>
                                 <p>By A.P.J. Abdul Kalam</p>
                                 <!-- star ratings  -->
                                 <div class="d-flex">
                                     <span class="me-2">5.0</span>
                                     <div class="d-flex align-items-center">
-                                      <div class="front-star">
-                                        <i class="fa fa-star " aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <div class="back-star" style="width: 50%;">
+                                        <div class="front-star">
                                             <i class="fa fa-star " aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
+                                            <div class="back-star" style="width: 50%;">
+                                                <i class="fa fa-star " aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
                                     <span class="ms-2">( 5 Reviews )</span>
                                 </div>
@@ -79,26 +87,27 @@
                         <div class="card">
                             <a href="#"><img src="images/autobiography_yogi.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
-                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">Biography of Yogi</a></h2>
+                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">Biography of Yogi</a>
+                                </h2>
                                 <p>By Paramashansa Yogananda</p>
                                 <!-- star ratings  -->
                                 <div class="d-flex">
                                     <span class="me-2">4.0</span>
                                     <div class="d-flex align-items-center">
-                                      <div class="front-star">
-                                        <i class="fa fa-star " aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <div class="back-star" style="width: 40%;">
+                                        <div class="front-star">
                                             <i class="fa fa-star " aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
+                                            <div class="back-star" style="width: 40%;">
+                                                <i class="fa fa-star " aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
                                     <span class="ms-2">( 2 Reviews )</span>
                                 </div>
@@ -109,26 +118,27 @@
                         <div class="card">
                             <a href="#"><img src="images/habits_of_people.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
-                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">7 Habits of Highly Effective People</h2></a>
+                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">7 Habits of Highly
+                                        Effective People</h2></a>
                                 <p>By Stephen R. Covey</p>
                                 <!-- star ratings  -->
                                 <div class="d-flex">
                                     <span class="me-2">5.0</span>
                                     <div class="d-flex align-items-center">
-                                      <div class="front-star">
-                                        <i class="fa fa-star " aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <div class="back-star" style="width: 50%;">
+                                        <div class="front-star">
                                             <i class="fa fa-star " aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
+                                            <div class="back-star" style="width: 50%;">
+                                                <i class="fa fa-star " aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
                                     <span class="ms-2">( 5 Reviews )</span>
                                 </div>
@@ -145,20 +155,20 @@
                                 <div class="d-flex">
                                     <span class="me-2">5.0</span>
                                     <div class="d-flex align-items-center">
-                                      <div class="front-star">
-                                        <i class="fa fa-star " aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <div class="back-star" style="width: 80%;">
+                                        <div class="front-star">
                                             <i class="fa fa-star " aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
+                                            <div class="back-star" style="width: 80%;">
+                                                <i class="fa fa-star " aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
                                     <span class="ms-2">( 5 Reviews )</span>
                                 </div>
@@ -166,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                  <!-- book listing row, with 4 books columns -->
+                <!-- book listing row, with 4 books columns -->
                 <div class="row mt-3">
                     <div class="col-lg-3 col-md-4">
                         <div class="card">
@@ -174,27 +184,28 @@
                             <a href="#"><img src="images/apj_abdul_kalam.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <!-- book title -->
-                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">Abdul Kalam My Journey</a></h2>
+                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">Abdul Kalam My
+                                        Journey</a></h2>
                                 <!-- book author name  -->
                                 <p>By A.P.J. Abdul Kalam</p>
                                 <!-- star ratings  -->
                                 <div class="d-flex">
                                     <span class="me-2">5.0</span>
                                     <div class="d-flex align-items-center">
-                                      <div class="front-star">
-                                        <i class="fa fa-star " aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <div class="back-star" style="width: 50%;">
+                                        <div class="front-star">
                                             <i class="fa fa-star " aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
+                                            <div class="back-star" style="width: 50%;">
+                                                <i class="fa fa-star " aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
                                     <span class="ms-2">( 5 Reviews )</span>
                                 </div>
@@ -208,27 +219,28 @@
                             <a href="#"><img src="images/autobiography_yogi.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <!-- book title  -->
-                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">Biography of Yogi</a></h2>
+                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">Biography of Yogi</a>
+                                </h2>
                                 <!-- book author  -->
                                 <p>By Paramashansa Yogananda</p>
                                 <!-- star ratings  -->
                                 <div class="d-flex">
                                     <span class="me-2">4.0</span>
                                     <div class="d-flex align-items-center">
-                                      <div class="front-star">
-                                        <i class="fa fa-star " aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <div class="back-star" style="width: 40%;">
+                                        <div class="front-star">
                                             <i class="fa fa-star " aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
+                                            <div class="back-star" style="width: 40%;">
+                                                <i class="fa fa-star " aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
                                     <span class="ms-2">( 2 Reviews )</span>
                                 </div>
@@ -241,27 +253,28 @@
                             <a href="#"><img src="images/habits_of_people.jpg" class="card-img-top" alt="..."></a>
                             <div class="card-body">
                                 <!-- book title  -->
-                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">7 Habits of Highly Effective People</h2></a>
+                                <h2 class="h5"><a href="#" class="text-decoration-none text-dark">7 Habits of Highly
+                                        Effective People</h2></a>
                                 <!-- book author  -->
                                 <p>By Stephen R. Covey</p>
                                 <!-- star ratings  -->
                                 <div class="d-flex">
                                     <span class="me-2">5.0</span>
                                     <div class="d-flex align-items-center">
-                                      <div class="front-star">
-                                        <i class="fa fa-star " aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <div class="back-star" style="width: 50%;">
+                                        <div class="front-star">
                                             <i class="fa fa-star " aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
+                                            <div class="back-star" style="width: 50%;">
+                                                <i class="fa fa-star " aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
                                     <span class="ms-2">( 5 Reviews )</span>
                                 </div>
@@ -281,20 +294,20 @@
                                 <div class="d-flex">
                                     <span class="me-2">5.0</span>
                                     <div class="d-flex align-items-center">
-                                      <div class="front-star">
-                                        <i class="fa fa-star " aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <i class="fa fa-star" aria-hidden="true"></i>
-                                        <div class="back-star" style="width: 80%;">
+                                        <div class="front-star">
                                             <i class="fa fa-star " aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                             <i class="fa fa-star" aria-hidden="true"></i>
+                                            <div class="back-star" style="width: 80%;">
+                                                <i class="fa fa-star " aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
                                     <span class="ms-2">( 5 Reviews )</span>
                                 </div>
@@ -307,17 +320,45 @@
             <section>
                 <nav aria-label="Page navigation">
                     <ul class="pagination">
-                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                      <li class="page-item"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
                     </ul>
-                  </nav>
+                </nav>
             </section>
         </div>
     </main>
+    <!-- footer section  -->
+    <footer class="bg-primary shadow-lg mt-2">
+        <div class="container p-5 text-white">
+            <div class="row">
+                <div class="col-4">
+                    <h4>Book Review Application</h4>
+                    <p>Book review application developed for providing users book reviews given by users</p>
+                    <p>Copyright &copy; 2024-25</p>
+                </div>
+                <div class="col-4">
+                    <h4>About Us</h4>
+                    <p>We are group of indiviudal who build this application for community</p>
+                    <p>We are reader who enjoy the books reading and love the books</p>
+                </div>
+                <div class="col-4">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#" class="text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-white">My Profile</a></li>
+                        <li><a href="#" class="text-white">Best Books</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- bootstarp js cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
