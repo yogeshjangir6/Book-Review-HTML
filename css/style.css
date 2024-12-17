@@ -1,0 +1,12 @@
+ /* star ratings */
+ .front-star{
+    color: lightgray;
+    position: relative;
+    display: flex;
+  }
+  .back-star{
+   color: blue;
+   position: absolute;
+   display: flex;
+   overflow: hidden;
+  }
